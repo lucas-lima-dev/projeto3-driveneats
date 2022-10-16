@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+  }
+  
 body {
     background: #E5E5E5;
+    overflow-y: scroll;
 }
 .main-container {
     width: 414px;
@@ -14,6 +19,7 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 1;
 }
 h1 {
     color: #FFFFFF;
@@ -44,14 +50,14 @@ h1 {
 
 .conteudo-central {
     margin-top: 123px;
+    margin-bottom: 60px;
     gap: 27px 0px;
+    
 }
 
 h2 {
-    
     height: 25px;
     margin-left: 19px;
-    
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
@@ -59,16 +65,16 @@ h2 {
     line-height: 32px;
     letter-spacing: 0.018em;
     color: #333333;
-    
 }
 
-.caixa-primeiro-prato {
+
+.dishes-box {
     width: 414px;
     display: flex;
     overflow-x: scroll;
 }
 
-.caixa-comida  {
+.option-box  {
     width: 172px;
     height: 216px;
     margin-left: 19px;
@@ -79,16 +85,31 @@ h2 {
     border-radius: 9px;
     display: flex;
     flex-direction: column;
-    
-
+    position: relative;
 }
 
-.caixa-comida img {
+.option-box img {
     width: 144px;
     height: 87px;
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 18px;
+}
+ .selected-item {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+.option-box .checked {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    left: 130px;
+    top: 163px;
+    color: rgba(0,0,0,0.25)
+}
+
+.option-box .hidden {
+    display: none;
 }
 
 h3 {
@@ -104,7 +125,7 @@ h3 {
     color: #333333;
 }
 
-.caixa-comida .descricao {
+.option-box .descricao {
     width: 147px;
     margin-left: 14px;
     margin-top: 4px;
@@ -116,7 +137,7 @@ h3 {
     color: #A6A6A6;
 }
 
-.caixa-comida .preco {
+.option-box .preco {
     width: 66px;
     height: 19px;
     margin-left: 14px;
@@ -152,11 +173,10 @@ h3 {
     border-radius: 50px;
 }
 
+
 .textodentro {
     width: 364px;
-    height: 53px;
-    
-    
+    height: 53px;  
 }
 
 .textodentro p {
