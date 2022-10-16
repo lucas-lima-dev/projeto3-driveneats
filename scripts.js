@@ -1,56 +1,63 @@
 
 let dish;
 let drink;
-let desserts;
+let dessert;
 
 function selectDish (seletor) {
 
-    const itemSelected = document.querySelector(".dishes .selected-item");
+    dish = document.querySelector(".dishes .selected-item");
     const iconSelected = document.querySelector(".dishes .checked:not(.hidden)");
 
-    if (itemSelected !==null && iconSelected !==null) {
-        itemSelected.classList.remove("selected-item");
+    if (dish !==null && iconSelected !==null) {
+        dish.classList.remove("selected-item");
         iconSelected.classList.add("hidden");
     }
 
     seletor.classList.toggle("selected-item");
     seletor.lastElementChild.classList.toggle("hidden");
+
+    enableFinish();
 }
 
 function selectDrink (seletor) {
 
-    const itemSelected = document.querySelector(".drinks .selected-item");
+    drink = document.querySelector(".drinks .selected-item");
     const iconSelected = document.querySelector(".drinks .checked:not(.hidden)");
 
-    if (itemSelected !==null && iconSelected !==null) {
-        itemSelected.classList.remove("selected-item");
+    if (drink !==null && iconSelected !==null) {
+        drink.classList.remove("selected-item");
         iconSelected.classList.add("hidden");
     }
 
     seletor.classList.toggle("selected-item");
     seletor.lastElementChild.classList.toggle("hidden");
+
+    enableFinish();
 }
 
 function selectDessert (seletor) {
 
-    const itemSelected = document.querySelector(".desserts .selected-item");
+    dessert = document.querySelector(".desserts .selected-item");
     const iconSelected = document.querySelector(".desserts .checked:not(.hidden)");
 
-    if (itemSelected !==null && iconSelected !==null) {
-        itemSelected.classList.remove("selected-item");
+    if (dessert !==null && iconSelected !==null) {
+        dessert.classList.remove("selected-item");
         iconSelected.classList.add("hidden");
     }
 
     seletor.classList.toggle("selected-item");
     seletor.lastElementChild.classList.toggle("hidden");
+
+    enableFinish();
 }
 
+function enableFinish () {
 
-
-
-
-
-function finalizarPedido () {
-    const mudarbotao = document.querySelector (".finalizarPedido");
-    mudarbotao.innerHTML = `Fechar pedido`;
+    if (dish !== undefined && drink !== undefined && dessert !== undefined){
+        const CheckoutButon = document.querySelector(".bottom-tab .finishButton .finishText");
+        const selected = document.querySelector(".boxFinish");
+        selected.classList.add("finish");
+        CheckoutButon.innerHTML = `Fechar pedido`;
+    }
 }
+    

@@ -162,7 +162,7 @@ h3 {
     left: 0px;
 }
 
-.botao {
+.boxFinish {
     width: 364px;
     height: 61px;
     margin-top: 15px;
@@ -173,13 +173,18 @@ h3 {
     border-radius: 50px;
 }
 
+.finish {
+    background: #32B72F;
+    margin: auto;
+    padding: 10px 30px;
+}
 
-.textodentro {
+.finishButton {
     width: 364px;
     height: 53px;  
 }
 
-.textodentro p {
+.finishButton .finishText {
    
     margin-top:8px;
     padding-left: 85px;
