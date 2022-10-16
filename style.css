@@ -50,7 +50,7 @@ h1 {
 
 .conteudo-central {
     margin-top: 123px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     gap: 27px 0px;
     
 }
@@ -177,6 +177,7 @@ h3 {
     background: #32B72F;
     margin: auto;
     padding: 10px 30px;
+    cursor: pointer;
 }
 
 .finishButton {
