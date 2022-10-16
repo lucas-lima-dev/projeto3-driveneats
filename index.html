@@ -25,80 +25,94 @@
             <p>Sua comida em 6 minutos</p>
         </div>
         <div class="conteudo-central">
+
+            <!-- Inicio caixa da comida-->
             <h2>Primeiro, seu prato</h2>
-            <div class="caixa-primeiro-prato">
-                <div class="caixa-comida">
+            <div class="dishes-box dishes" data-test="dishes">
+                <div onclick = "selectDish(this)" data-test="food-option" class="option-box">
                     <img src="./images/frango_yin_yang 1.png" alt="">
-                    <h3>Frango Yin Yang</h3>
+                    <h3 data-test="food-title">Frango Yin Yang</h3>
                     <p class = "descricao">Um pouco de batata, um pouco de salada</p>
-                    <p class = "preco">R$ 14,90</p>
+                    <p data-test="food-price" class = "preco">R$ 14,90</p>
+                    <img class = "checked hidden" src="./images/checkmark-circle 1.png" alt="">
                 </div>
-                <div class="caixa-comida">
+                <div onclick = "selectDish(this)" data-test="food-option" class="option-box">
                     <img src="./images/frango assado.png" alt="">
-                    <h3>Frango Assado</h3>
+                    <h3 data-test="food-title">Frango Assado</h3>
                     <p class = "descricao">Um pouco de batata, um pouco de salada</p>
-                    <p class = "preco">R$ 13,90</p>
+                    <p data-test="food-price" class = "preco">R$ 13,90</p>
+                    <img class = "checked hidden" src="./images/checkmark-circle 1.png" alt="">
                 </div>
-                <div class="caixa-comida">
+                <div onclick = "selectDish(this)" data-test="food-option" class="option-box">
                     <img src="./images/frango grelhado.png" alt="">
-                    <h3>Frango Grelhado</h3>
+                    <h3 data-test="food-title">Frango Grelhado</h3>
                     <p class = "descricao">Um pouco de batata, um pouco de salada</p>
-                    <p class = "preco">R$ 12,90</p>
+                    <p data-test="food-price" class = "preco">R$ 12,90</p>
+                    <img class = "checked hidden" src="./images/checkmark-circle 1.png" alt="">
                 </div>
             </div>
-
+            <!-- Fim caixa da comida-->
+            <!-- Inicio caixa da bebida-->
             <h2>Agora, sua bebida</h2>
-            <div class="caixa-primeiro-prato">
-                <div class="caixa-comida">
+            <div class="dishes-box drinks" data-test="drinks">
+                <div onclick = "selectDrink(this)" data-test="food-option" class="option-box">
                     <img src="./images/coquinha_gelada 1.png" alt="">
-                    <h3>Coquinha gelada</h3>
+                    <h3 data-test="food-title">Coquinha gelada</h3>
                     <p class = "descricao">Lata 350ml</p>
-                    <p class = "preco">R$ 4,90</p>
+                    <p data-test="food-price" class = "preco">R$ 4,90</p>
+                    <img class = "checked hidden" src="./images/checkmark-circle 1.png" alt="">
                 </div>
-                <div class="caixa-comida">
+                <div onclick = "selectDrink(this)" data-test="food-option" class="option-box">
                     <img src="./images/sprite.png" alt="">
-                    <h3>Sprite</h3>
+                    <h3 data-test="food-title">Sprite</h3>
                     <p class = "descricao">Lata 350ml</p>
-                    <p class = "preco">R$ 3,90</p>
+                    <p data-test="food-price" class = "preco">R$ 3,90</p>
+                    <img class = "checked hidden" src="./images/checkmark-circle 1.png" alt="">
                 </div>
-                <div class="caixa-comida">
+                <div onclick = "selectDrink(this)" data-test="food-option" class="option-box">
                     <img src="./images/fanta uva.png" alt="">
-                    <h3>Fanta Uva</h3>
+                    <h3 data-test="food-title">Fanta Uva</h3>
                     <p class = "descricao">Lata 350ml</p>
-                    <p class = "preco">R$ 2,90</p>
+                    <p data-test="food-price" class = "preco">R$ 2,90</p>
+                    <img class = "checked hidden" src="./images/checkmark-circle 1.png" alt="">
                 </div>
             </div>
-
+            <!-- Fim caixa da bebida-->
+            <!-- Inicio caixa da sobremesa-->
             <h2>Por fim, sua sobremesa</h2>
-            <div class="caixa-primeiro-prato">
-                <div class="caixa-comida">
+            <div class="dishes-box desserts" data-test="desserts">
+                <div onclick = "selectDessert(this)" data-test="food-option" class="option-box">
                     <img src="./images/pudim 1.png" alt="">
-                    <h3>Pudim</h3>
+                    <h3 data-test="food-title">Pudim</h3>
                     <p class = "descricao">Lata 350ml</p>
-                    <p class = "preco">R$ 7,90</p>
+                    <p data-test="food-price" class = "preco">R$ 7,90</p>
+                    <img class = "checked hidden" src="./images/checkmark-circle 1.png" alt="">
                 </div>
-                <div class="caixa-comida">
+                <div onclick = "selectDessert(this)" data-test="food-option" class="option-box">
                     <img src="./images/brigadeirao.png" alt="">
-                    <h3>Brigadeirao</h3>
+                    <h3 data-test="food-title">Brigadeirao</h3>
                     <p class = "descricao">Lata 350ml</p>
-                    <p class = "preco">R$ 6,90</p>
+                    <p data-test="food-price" class = "preco">R$ 6,90</p>
+                    <img class = "checked hidden" src="./images/checkmark-circle 1.png" alt="">
                 </div>
-                <div class="caixa-comida">
+                <div onclick = "selectDessert(this)" data-test="food-option" class="option-box">
                     <img src="./images/cocada.png" alt="">
-                    <h3>Cocada</h3>
+                    <h3 data-test="food-title">Cocada</h3>
                     <p class = "descricao">Lata 350ml</p>
-                    <p class = "preco">R$ 5,90</p>
+                    <p data-test="food-price" class = "preco">R$ 5,90</p>
+                    <img class = "checked hidden" src="./images/checkmark-circle 1.png" alt="">
                 </div>
             </div>
         </div>    
             
         
-        <div class="bottom-tab">
-            <div class="botao">
-                <div class="textodentro"><p>Selecione os 3 itens para fechar o pedido</p></div>
+        <div data-test="finish-button" class="bottom-tab" onclick="finalizarPedido()">
+            <div class="botao " >
+                <div class="textodentro finalizarPedido"><p>Selecione os 3 itens para fechar o pedido</p></div>
                 
             </div>
         </div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
